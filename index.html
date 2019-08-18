@@ -8,25 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    
 <style>
+  
     body{
         background-color: #d1d3d6;
         font-family: georgia, sans-serif;
         margin-left: 10px;
         margin-right: 10px;
     }
-    @media screen and (max-width: 600px) { body{ background-color: #f2f2f2;}}
+/*under 500px screen */
+@media screen and (max-width: 31.25em) { 
+	body {background-color: white;}}
 
     #main{
         display: block;
         }
     
-    #title{
+   header #title{
         text-transform: uppercase;
         background-color: #a3a5a8;
         height: 100%;
         text-align: center;
     }
-       
+       /*under 500px screen */
+    @media screen and (max-width: 31.25em) { 
+	header #title {background-color: white;
+    font-size: 1em;}}
+    
    #image{
         max-width: 100%;
         display: block;
